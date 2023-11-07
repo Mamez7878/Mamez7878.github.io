@@ -212,9 +212,19 @@ footer h1::before {
 }
 
 footer a {
-    padding: 10px;
+    padding: 5px;
     margin-left: 5px;
-    font-size: 1.2em;
+    font-size: 2em;
+}
+
+footer a i,
+footer .credit a {
+    transition: .3s ease;
+}
+
+footer a i:hover,
+footer .credit a:hover {
+    color: grey;
 }
 
 footer .credit {
@@ -224,7 +234,6 @@ footer .credit {
 
 footer .credit a {
     padding: 3px;
-    color: lightgrey;
     text-decoration: underline;
-    font-size: .9em;
+    font-size: 1em;
 }
