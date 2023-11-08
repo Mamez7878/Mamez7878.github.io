@@ -80,12 +80,25 @@ header .links nav a::before {
     opacity: 0;
     height: 2px;
     background-color: #fff;
-    transition: all .5s ease;
+    transition: .5s ease;
 }
 
-header .links nav a:hover:before {
+header .links nav a::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    width: 0;
+    opacity: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s ease;
+}
+
+header .links nav a:hover:before,
+header .links nav a:hover:after {
     opacity: 1;
-    width: 80%;
+    width: 50%;
 }
 
 .intro {
@@ -102,7 +115,7 @@ header .links nav a:hover:before {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: url("../img/intro-bg.jpg") no-repeat fixed center center;
+    background: url("../img/bg.jpg") no-repeat fixed center center;
     background-size: cover;
 }
 
@@ -133,46 +146,77 @@ header .links nav a:hover:before {
 .contents .post {
     width: 100%;
     height: 650px;
-    background-color: antiquewhite;
+    background-color: rgb(243, 243, 243);
 }
 
-.contents .post-1 {
-    height: 400px;
-    background: #fff;
-}
-
-.contents .post-1 .sec {
-    width: 60%;
-    padding: 10px;
-}
-
-.contents .post-1 p {
-    text-align: center;
-    font-size: 1.5em;
+.contents .post .sec {
     color: #000;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.contents .post-2 .sec {
+.contents .post .sec {
     overflow: hidden;
     justify-content: center;
     height: 100%;
     width: 50%;
 }
 
-.contents .post-2 img {
+.contents .post img {
     height: 100%;
 }
 
-.contents .post-2 p {
+.contents .post h1 {
+    color: rgb(0, 0, 50);
+}
+
+.contents .post p {
     font-weight: bold;
     padding: 0 100px;
     text-align: center;
     color: #000;
 }
 
+.contents .features {
+    height: 400px;
+    background: #fff;
+}
+
+.contents .features .section {
+    position: relative;
+    background: url(../img/post-img-1.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.contents .features .section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.contents .features .sec {
+    width: 70%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.contents .features h1 {
+    font-size: 3em;
+}
+
+.contents .features p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #000;
+}
+
 footer {
     position: relative;
-    background: linear-gradient(135deg, black 70%, transparent);
+    background: linear-gradient(180deg, black 70%, rgba(0, 0, 0, 0.5));
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -181,12 +225,12 @@ footer {
 footer::before {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     z-index: -1;
-    height: 100%;
-    width: 50%;
-    background: url("../img/ft-bg.jpg") no-repeat center center;
+    height: 40%;
+    width: 100%;
+    background: url("../img/bg.jpg") no-repeat center center;
     background-size: cover;
 }
 
