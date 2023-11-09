@@ -208,6 +208,10 @@ header .links nav a:hover:after {
     list-style-type: circle;
 }
 
+.contents .post .text i {
+    font-size: 1em;
+}
+
 .contents .features {
     height: 400px;
     background: #fff;
