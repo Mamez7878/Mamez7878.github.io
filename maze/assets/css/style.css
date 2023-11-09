@@ -10,10 +10,10 @@
     color: #fff;
 }
 
-html {
+/*html {
     scroll-behavior: smooth;
 }
-
+*/
 .section {
     height: 100%;
     display: flex;
@@ -143,6 +143,22 @@ header .links nav a:hover:after {
     margin-top: 3px;
 }
 
+.intro a {
+    margin-top: 10px;
+    padding: 15px 40px;
+    color: #000;
+    font-weight: bolder;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: .5s ease;
+}
+
+.intro a:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
 .contents .post {
     width: 100%;
     height: 650px;
@@ -150,16 +166,13 @@ header .links nav a:hover:after {
 }
 
 .contents .post .sec {
-    color: #000;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.contents .post .sec {
     overflow: hidden;
     justify-content: center;
     height: 100%;
     width: 50%;
+    color: #000;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contents .post img {
@@ -175,6 +188,24 @@ header .links nav a:hover:after {
     padding: 0 100px;
     text-align: center;
     color: #000;
+}
+
+.contents .post li {
+    color: black;
+}
+
+.contents .post a {
+    color: rgb(0, 0, 50);
+    text-decoration: underline;
+}
+
+.contents .post .play {
+    margin: 10px;
+}
+
+.contents .post .play li {
+    padding: 10px 0;
+    list-style-type: circle;
 }
 
 .contents .features {
@@ -212,6 +243,105 @@ header .links nav a:hover:after {
     text-align: center;
     font-size: 1.5em;
     color: #000;
+}
+
+.contents .howto {
+    position: relative;
+    height: auto;
+    background: url("../img/howto-bg.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.contents .howto .sec {
+    z-index: 10;
+    height: auto;
+    padding: 30px 0;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.contents .howto::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);
+}
+
+.contents .howto h1 {
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contents .howto strong {
+    color: black;
+}
+
+.contents .howto li {
+    margin: 10px 0;
+    padding: 20px;
+    background: rgb(250, 250, 250);
+    list-style-type: decimal;
+}
+
+.contents .howto p {
+    text-align: left;
+}
+
+.contents .about .pic {
+    position: relative;
+    background: url(../img/about-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.contents .about .pic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+}
+
+.contents .about .circle {
+    position: absolute;
+    width: 50%;
+    height: 58%;
+    border: 10px solid rgba(255, 182, 133, 0.4);
+    border-radius: 1000px;
+}
+
+.contents .about img {
+    width: 45%;
+    height: auto;
+    clip-path: circle();
+}
+
+.contents .about .text h1 {
+    margin: 30px 0;
+}
+
+.contents .about .text .links {
+    border-top: 1px solid #000;
+    padding: 15px 50px;
+    margin: 20px 0 0 0;
+}
+
+.contents .about .text i {
+    color: rgb(83, 61, 0);
+}
+
+.contents .about .text i:hover {
+    color: rgb(0, 0, 44);
+}
+
+.contents .about .text a {
+    font-size: 2em;
+    margin: 20px 0;
+    padding: 10px;
 }
 
 footer {

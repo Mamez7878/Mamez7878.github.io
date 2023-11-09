@@ -18,8 +18,8 @@
                         <nav>
                             <a data-aos="fade-up" href="">Home</a>
                             <a data-aos="fade-up" data-aos-duration="500" href="#features">Features</a>
-                            <a data-aos="fade-up" data-aos-duration="700" href="#">HowTo</a>
-                            <a data-aos="fade-up" data-aos-duration="800" href="#">About</a>
+                            <a data-aos="fade-up" data-aos-duration="700" href="#howto">HowTo</a>
+                            <a data-aos="fade-up" data-aos-duration="800" href="#about">About</a>
                         </nav>
                     </div>
                 </div>
@@ -31,6 +31,7 @@
                 <div class="sec">
                     <h1 data-aos="fade-up">Maze Project</h1>
                     <p data-aos="fade-up" data-aos-duration="700">A Maze Game Made By SDL2 Engine</p>
+                    <a data-aos="fade-up" data-aos-duration="800" href="https://github.com/mamebb2023/Maze-Project">Explore</a>
                 </div>
             </div>
         </div>
@@ -46,33 +47,74 @@
             <div class="post posts">
                 <div class="section">
                     <div class="sec post-img">
-                        <img src="assets/img/post-img-1.jpg">
+                        <img src="assets/img/code.png">
                     </div>
                     <div class="sec text">
-                        <h1 data-aos="fade-down">headline 1</h1><br>
-                        <p data-aos="fade-up">some description of the feature</p>
+                        <h1 data-aos="fade-right">C</h1><br>
+                        <p data-aos="fade-left">The game is made entierly made from C because it is compliant with the <a href="#">SDL2</a> Engine</p>
                     </div>
                 </div>
             </div>
             <div style="background-color: #fff;" class="post posts">
                 <div class="section">
                     <div class="sec text">
-                        <h1 data-aos="fade-left">headline 2</h1><br>
-                        <p data-aos="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore dolorib</p>
+                        <h1 data-aos="fade-left">User Friendly</h1><br>
+                        <p data-aos="fade-right">Very easy to navigate around the maze:</p>
+                        <div class="play">
+                            <li data-aos="fade-up" data-aos-duration="600">W - To move forward</li>
+                            <li data-aos="fade-up" data-aos-duration="700">S - To move backward</li>
+                            <li data-aos="fade-up" data-aos-duration="800">D - To rotate camera right</li>
+                            <li data-aos="fade-up" data-aos-duration="900">W - To rotate camera left</li>
+                            <li data-aos="fade-up" data-aos-duration="1000">You can use the mouse to rotate the camera too.</li>
+                        </div>
                     </div>
                     <div class="sec post-img">
-                        <img src="assets/img/post-img-1.jpg">
+                        <img src="assets/img/player.png">
                     </div>
                 </div>
             </div>
             <div class="post posts">
                 <div class="section">
                     <div class="sec post-img">
-                        <img src="assets/img/maze.gif">
+                        <img src="assets/img/map.gif">
                     </div>
                     <div class="sec text">
                         <h1 data-aos="fade-right">Map</h1><br>
-                        <p data-aos="fade-left">Navigate through the maze using the map at the top left corner. The map workes using RayCasting, a method used when making games to get the closest block form the player.</p>
+                        <p data-aos="fade-left">Navigate through the maze using the map at the top left corner. The map workes using <a href="https://en.wikipedia.org/wiki/Ray_casting">RayCasting</a>, a method used when making games to get the closest block form the player.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post howto" id="howto">
+                <div class="section">
+                    <div class="sec">
+                        <h1 data-aos="fade-down">HowTo</h1>
+                        <div class="steps">
+                            <li data-aos="fade-up">Download or clone the repository from Github :</li>
+                            <p data-aos="fade-up"  data-aos-duration="600"><a href="https://github.com/mamebb2023/Maze-Project">git clone https://github.com/mamebb2023/Maze-Project</a></p>
+                            <li data-aos="fade-up"  data-aos-duration="700">Download <strong>SDL2</strong> from <a href="https://wiki.libsdl.org/SDL2/Installation">here</a></li>
+                            <li data-aos="fade-up"  data-aos-duration="800">Extract and move the <strong>'i686-w64-mingw32'</strong> folder to a know place</li>
+                            <li data-aos="fade-up"  data-aos-duration="900">Edit the <strong>'Makefile'</strong> in the cloned folder :</li>
+                            <p data-aos="fade-up"  data-aos-duration="1000">Edit the include location</p>
+                            <p data-aos="fade-up"  data-aos-duration="1100">Edit the lib location</p></li>
+                            <p data-aos="fade-up"  data-aos-duration="1200">Copy the 'SDL2.dll' to the current working directory</p>
+                            <li data-aos="fade-up"  data-aos-duration="1300">Open a terminal and type <strong>'make'</strong> and the game should pop up</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post about" id="about">
+                <div class="section">
+                    <div class="sec pic">
+                        <div class="circle"></div>
+                        <img src="assets/img/profile.png">
+                    </div>
+                    <div class="sec text">
+                        <h1>About</h1>
+                        <p>Buliding this project was a great challenge. Starting from configuring SDL2 on my local computer, to learning about SDL2 and RayCasting.<br><br>Me?<br><br>My name is Mohammednur Seid and I am currently studying Software Engineering at Holberton School through there online platform ALX Africa.<br>I am enthusiast learner and I like to code as much as I like chocolate</p>
+                        <div class="links">
+                            <a href="https://www.linkedin.com/in/mohammednurseid"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="htttps://github.com/mamebb2023"><i class='bx bxl-github' ></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
